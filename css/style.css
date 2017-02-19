@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 2000px;
+}
+.pages {
+    position: relative;
+    width: 563px;
+    min-height: 789px;
+    margin: 200px auto 0px auto;
+}
+.page {
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    width: 523px;
+    height: 750px;
+}
+.share {
+    position: fixed;
+    right:0px;
+    bottom: 210px;
+}
+.topPage {
+    position: relative;
+    left: 0px;
+    top:  0px;
+    background-color: #ebebeb;
+}
+.midPage {
+    position: absolute;
+    left: 21px;
+    top: 20px;
+    background-color: #cccccc;
+}
+.botPage {
+    position: absolute;
+    left: 40px;
+    top: 39px;
+    background-color: #acacac;
+}
+.topBookmark {
+    width: 111px;
+    height: 35px;
+    position: absolute;
+    left: 494px;
+    top: 40px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    background-color: #f68e56;
+}
+.midBookmark {
+    position: absolute;
+    left: 472px;
+    top: 43px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    background-color: #39b54a;
+    width: 95px;
+    height: 31px;
+}
+.botBookmark {
+    position: absolute;
+    left: 440px;
+    top: 48px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    background-color: #00aeef;
+    width: 95px;
+    height: 31px;
+}
+.content {
+    position: absolute;
+    top: 38px;
+    left: 33px;
+    width: 455px;
+}
+.content h1 {
+    font-family: 'MyriadProRegular';
+    color: #333333;
+    margin: 0px 0px 14px 0px;
+    line-height: 1;
+    font-size: 24px;
+    font-weight: 400;
+}
+.content p {
+    font-family: 'MyriadProRegular';
+    color: #333333;
+    line-height: 1.17;
+    font-size: 0.75em;
+    font-weight: 400;
+    margin: 0px 0px 17px 0px;
+    -webkit-margin-before: 0px;
+}
+.floatLeft {
+    float: left;
+    width: 207px;
+    height: 111px;
+    margin: 0px 22px 15px 0px;
+}
+.floatRight {
+    float: right;
+    width: 140px;
+    height: 140px;
+}
+.other {
+    display: inline-block;
+    margin: auto;
+    width: 455px;
+    font-size:0;
+}
+.other img:nth-child(2n+1) {
+    float:right;
+}
+.other img:nth-child(2n+0) {
+    float: left;
+}
+.other img {
+    width: 194px;
+    height: 89px;
+    margin: 0px 0px 14px 0px;
+}
+.other h2 {
+    font-family: 'MyriadProRegular';
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0px 20px 0px;
+}
+.other:after {
+    display: block;
+    content: '.';
+    clear: both;
+    visibility: hidden;
+    height: 0px;
+}
+footer {
+    position: absolute;
+    bottom: 48px;
+    margin: 0px 0px 0px 39px;
+    width:440px;
+    font-family: 'MyriadProRegular';
+    text-align: center;
+    color: #333333;
+    font-size: 9px;
+    font-weight: 400;
+}
