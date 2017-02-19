@@ -102,6 +102,13 @@ body {
     margin: 0px 0px 17px 0px;
     -webkit-margin-before: 0px;
 }
+.maincontent:after {
+    display: block;
+    content: '.';
+    clear: both;
+    visibility: hidden;
+    height: 0px;
+}
 .floatLeft {
     float: left;
     width: 207px;
