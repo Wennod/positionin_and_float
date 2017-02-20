@@ -1,148 +1,139 @@
 * {
     box-sizing: border-box;
 }
+
 body {
+    font-family: 'MyriadProRegular';
     height: 2000px;
+    color:  #333333;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
 }
-.pages {
+h1 {
+    font-family: 'MyriadProRegular';
+    color: #333333;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 14px;
+    line-height: 1;
+}
+h2 {
+    font-family: 'MyriadProRegular';
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0px;
+    line-height: 1;
+}
+p {
+    margin-top: 0px;
+    line-height: 1.17;
+    margin-bottom: 17px;
+}
+
+.content {
     position: relative;
     width: 563px;
-    min-height: 789px;
-    margin: 200px auto 0px auto;
+    margin: 200px auto;
 }
-.page {
-    border-width: 2px;
-    border-color: #000000;
-    border-style: solid;
+
+.pages {
     width: 523px;
     height: 750px;
+    border-width: 2px;
+    border-color:  #000000;
+    border-style: solid;
 }
-.share {
-    position: fixed;
-    right:0px;
-    bottom: 210px;
-}
+
 .topPage {
+    background-color:#ebebeb;
     position: relative;
-    left: 0px;
-    top:  0px;
-    background-color: #ebebeb;
 }
 .midPage {
+    background-color:#cccccc;
     position: absolute;
-    left: 21px;
-    top: 20px;
-    background-color: #cccccc;
+    left:21px;
+    top:20px;
 }
 .botPage {
+    background-color:#acacac;
     position: absolute;
-    left: 40px;
-    top: 39px;
-    background-color: #acacac;
+    top:39px;
+    left:40px;
 }
-.topBookmark {
-    width: 111px;
-    height: 35px;
-    position: absolute;
-    left: 494px;
-    top: 40px;
+
+.bookMarks {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     border-width: 2px;
     border-color: #000000;
     border-style: solid;
-    background-color: #f68e56;
-}
-.midBookmark {
-    position: absolute;
-    left: 472px;
-    top: 43px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    border-width: 2px;
-    border-color: #000000;
-    border-style: solid;
-    background-color: #39b54a;
-    width: 95px;
-    height: 31px;
 }
 .botBookmark {
     position: absolute;
     left: 440px;
     top: 48px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    border-width: 2px;
-    border-color: #000000;
-    border-style: solid;
     background-color: #00aeef;
     width: 95px;
     height: 31px;
 }
-.content {
+.midBookmark {
     position: absolute;
-    top: 38px;
-    left: 33px;
-    width: 455px;
+    left: 472px;
+    top: 43px;
+    background-color: #39b54a;
+    width: 95px;
+    height: 31px;
 }
-.content h1 {
-    font-family: 'MyriadProRegular';
-    color: #333333;
-    margin: 0px 0px 14px 0px;
-    line-height: 1;
-    font-size: 24px;
-    font-weight: 400;
+.topBookmark {
+    position: absolute;
+    left: 494px;
+    top: 40px;
+    background-color: #f68e56;
+    width: 111px;
+    height: 35px;
 }
-.content p {
-    font-family: 'MyriadProRegular';
-    color: #333333;
-    line-height: 1.17;
-    font-size: 0.75em;
-    font-weight: 400;
-    margin: 0px 0px 17px 0px;
-    -webkit-margin-before: 0px;
+
+.topPage article {
+    margin:40px 32px 28px 32px;
 }
-.maincontent:after {
+.mainSection img:nth-of-type(2n+1) {
+    float: left;
+    width: 207px;
+    height: 111px;
+    margin: 0px 21px 15px 1px;
+}
+.mainSection img:nth-of-type(2n+0) {
+    float: right;
+    width: 140px;
+    height: 140px;
+    margin: 2px 0px 0px 6px;
+}
+.mainSection p:nth-of-type(1){
+    margin-bottom: 0px;
+}
+.mainSection:after {
     display: block;
     content: '.';
     clear: both;
     visibility: hidden;
     height: 0px;
 }
-.floatLeft {
-    float: left;
-    width: 207px;
-    height: 111px;
-    margin: 0px 22px 15px 0px;
-}
-.floatRight {
-    float: right;
-    width: 140px;
-    height: 140px;
-}
 .other {
     display: inline-block;
-    margin: auto;
-    width: 455px;
-    font-size:0;
+}
+.other img {
+    width: 194px;
+    height: 89px;
+    margin-bottom: 14px;
 }
 .other img:nth-child(2n+1) {
     float:right;
 }
 .other img:nth-child(2n+0) {
-    float: left;
-}
-.other img {
-    width: 194px;
-    height: 89px;
-    margin: 0px 0px 14px 0px;
-}
-.other h2 {
-    font-family: 'MyriadProRegular';
-    color: #333333;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 20px 0px 20px 0px;
+    float:left;
 }
 .other:after {
     display: block;
@@ -151,14 +142,16 @@ body {
     visibility: hidden;
     height: 0px;
 }
+aside {
+    position: fixed;
+    right:0px;
+    bottom:210px;
+}
 footer {
     position: absolute;
     bottom: 48px;
-    margin: 0px 0px 0px 39px;
-    width:440px;
-    font-family: 'MyriadProRegular';
-    text-align: center;
-    color: #333333;
+    left:42px;
     font-size: 9px;
-    font-weight: 400;
+    width: 440px;
+    text-align: center;
 }
